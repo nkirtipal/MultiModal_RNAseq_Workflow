@@ -10,6 +10,7 @@ library(tidyverse)
 seu <- readRDS("data/seurat_filtered.rds")
 
 # SCTransform normalization
+# Note: SCTransform accounts for sequencing depth and reduces technical variation
 seu <- SCTransform(seu, verbose = FALSE)
 
 # Save normalized object
