@@ -16,6 +16,7 @@ seu[["percent.mt"]] <- PercentageFeatureSet(seu, pattern = "^MT-")
 VlnPlot(seu, features = c("nFeature_RNA", "nCount_RNA", "percent.mt"), ncol = 3)
 
 # Filter cells based on QC thresholds
+# Note: Adjust thresholds based on your dataset characteristics
 seu <- subset(seu, subset = nFeature_RNA > 200 & nFeature_RNA < 5000 & percent.mt < 10)
 
 # Save filtered object for downstream analysis
