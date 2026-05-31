@@ -1,9 +1,7 @@
-# Data folder
+## Data
+This folder contains instructions to access the raw data used in this workflow.
 
-This folder contains instructions to access the raw and processed data used in this workflow.
-
-- Raw scRNA-seq datasets are publicly available on GEO:
-  - Example dataset 1: GSEXXXXX
-  - Example dataset 2: GSEYYYYY
-- Raw data files are not included due to size and licensing.
-- Filtered or processed Seurat objects used in scripts are stored in `data/` for demonstration.
+- Raw bulk RNA-seq and scRNA-seq datasets are publicly available on GEO
+- Specific dataset accession numbers will be provided upon publication
+- Raw data files are not included due to size
+- Processed Seurat objects used in scripts are stored in `data/` for demonstration
